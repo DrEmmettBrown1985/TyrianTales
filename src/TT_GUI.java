@@ -19,14 +19,14 @@ public class TT_GUI extends JFrame implements ActionListener {
 	        setLayout(new BorderLayout());
 	        
 	       
-	        setSize(1920,1080);// sets he size of the frame in pixles, will be smaller if the resilution is unsouported
+	        setSize(1920,1080);// sets the size of the frame in pixels, will be smaller if the resolution is unsupported
 	        setResizable(true);// lets the user change the size of the window
 	        setDefaultCloseOperation(EXIT_ON_CLOSE);
 	    	setBackground(Color.BLACK);
 	        setLayout(new FlowLayout());
 	        
 	 }
-	public void actionPerformed(ActionEvent arg0) {//What it does upon clicking on somthing
+	public void actionPerformed(ActionEvent arg0) {//What it does upon clicking on something
 		
 		
 	}
