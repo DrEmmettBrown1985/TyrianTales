@@ -1,0 +1,33 @@
+import java.awt.*;
+import javax.swing.*;
+public class Client extends JFrame {
+	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private JTextArea chatWindow;
+	
+		// TODO Auto-generated method stub
+	 
+		public Client(String host){
+			super("mgaik");
+		chatWindow = new JTextArea();
+		add(new JScrollPane(chatWindow));
+		setSize(600, 450);
+		setVisible(true);
+		chatWindow.setEditable(false);
+		chatWindow.append("memes");
+		}
+		public static void main(String[] args) {
+			Client charlie;
+			
+			charlie = new Client("");
+			charlie.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			
+	}
+
+}
+
