@@ -1,36 +1,46 @@
-import javax.swing.JOptionPane;
+/*import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import java.awt.BorderLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;*/
+import javax.swing.*;
+/*import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.Dimension;*/
+import java.awt.*;
+import java.awt.event.*;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-public class Tyrian_Tales extends JFrame implements ActionListener{// contains code to be exicuted 
+public class Tyrian_Tales extends JFrame implements ActionListener{
 	private static final long serialVersionUID = 1L;
 	public int c;
 	public static void main(String[] args) {
 		
 	new Tyrian_Tales().setVisible(true);
+
 	
 	}
-	
-	        public Tyrian_Tales() {	//Creates Buttons for class selection
+
+
+	public Tyrian_Tales() //Creates Buttons for class selection
+        {
 	        super("Class Selection");
 	        setLayout(new BorderLayout());
-	        
-	       
-	        setSize(1920,1080);// sets he size of the frame in pixles, will be smaller if the resilution is unsouported
-	        setResizable(true);// lets the user change the size of the window
+
+	        //Specifies the parameters for the Class Selection GUI, 800x600 pixels and centered on the user's screen
+	        setSize(800,600);
+	        setResizable(true);
 	        setDefaultCloseOperation(EXIT_ON_CLOSE);
 	    	setBackground(Color.GRAY);
 	        setLayout(new FlowLayout());
-	      
-            JButton button0 = new JButton(new ImageIcon("bt/0.jpg"));//Makes Buttons
+            setLocationRelativeTo(null);
+
+	        //Makes a button for each class
+
+            JButton button0 = new JButton(new ImageIcon("bt/0.jpg"));
             JButton button1 = new JButton(new ImageIcon("bt/1.jpg"));
             JButton button2 = new JButton(new ImageIcon("bt/2.jpg"));
             JButton button3 = new JButton(new ImageIcon("bt/3.jpg"));
@@ -40,18 +50,40 @@ public class Tyrian_Tales extends JFrame implements ActionListener{// contains c
 	 	        add(button2);
 	 	        add(button3);
 	 	        add(button4);
+
 	 	        button0.addActionListener(this);
 	 	        button0.setName("Mage");
+	 	        button0.setText("Mage");
+                button0.setBorder(null);
+                button0.setPreferredSize(new Dimension(80, 40));
+
+
 	 	        button1.addActionListener(this);
 	 	        button1.setName("Archer");
+                button1.setText("Archer");
+                button1.setBorder(null);
+                button1.setPreferredSize(new Dimension(80, 40));
+
 	 	        button2.addActionListener(this);
 	 	        button2.setName("Warrior");
+                button2.setText("Warrior");
+                button2.setBorder(null);
+	 	        button2.setPreferredSize(new Dimension(80, 40));
+
 	 	        button3.addActionListener(this);
 	 	        button3.setName("Knight");
+                button3.setText("Knight");
+
+                button3.setBorder(null);
+                button3.setPreferredSize(new Dimension(80, 40));
+
 	 	        button4.addActionListener(this);
 	 	        button4.setName("Paladin");
+                button4.setText("Paladin");
+                button4.setBorder(null);
+                button4.setPreferredSize(new Dimension(80, 40));
 	 	        
-	 	         }
+        }
 	    
 
 	public void actionPerformed(ActionEvent e) {//Class descriptions/ selection
@@ -66,7 +98,7 @@ public class Tyrian_Tales extends JFrame implements ActionListener{// contains c
 			if(name=="Mage")
 			{
 				c=1;
-				description=description+"\nMages have light armour and can weild Staffs, Scepters, Swords, and Foci" +acc_mesg;
+				description=description+"\nMages have light armour and can wield Staffs, Scepters, Swords, and Foci" +acc_mesg;
 			}
 			if(name=="Archer")
 			{
@@ -96,7 +128,7 @@ public class Tyrian_Tales extends JFrame implements ActionListener{// contains c
 			{
 				JOptionPane.showMessageDialog(null, ("You chose "+name ), null, 0);
 			setVisible(false);
-			new TT_GUI().setVisible(true);
+
 	        
 			}
 			/*int c is ID for classes
@@ -116,5 +148,5 @@ public class Tyrian_Tales extends JFrame implements ActionListener{// contains c
 
       
 	 
-	}// end
+	}// end*/
 
