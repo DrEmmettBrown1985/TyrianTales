@@ -10,7 +10,7 @@ public class TT_GUI extends JFrame {
         boolean troo = true;
         while (troo = true)
         {
-            break;
+            System.out.println("Im not dead");
         }
     }
 

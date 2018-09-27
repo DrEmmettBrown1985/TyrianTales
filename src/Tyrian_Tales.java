@@ -127,7 +127,8 @@ public class Tyrian_Tales extends JFrame implements ActionListener{
 			if(n==0)
 			{
 				JOptionPane.showMessageDialog(null, ("You chose "+name ), null, 0);
-			setVisible(false);
+				setVisible(false);
+			new TT_GUI().setVisible(true);
 
 	        
 			}
